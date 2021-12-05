@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hello!</title>
+  <link rel="stylesheet" href="/main.css">
+
+  <!-- Library scripts -->
+  <script src="/dist/socket.io.js"></script>
+  <script src="/dist/uuidv4.min.js"></script>
+  <script src="/dist/babylonjs/babylon.max.js" crossorigin="anonymous"></script>
+
+  <!-- import the webpage's javascript file -->
+  <script type="module" src="/src/index.js"></script>
+</head>
+
+<body id="mybody">
+  <div id="lobby" style="z-index: 2; position: absolute; top: 0px; left: 0px;">
+    <h1>Available Rooms</h1>
+
+    <p id="response">
+      av ms:
+    </p>
+
+    <!-- List with button -->
+    <ul id="list"></ul>
+    <button id="add_room">Join new room</button>
+  </div>
+
+  <div id="scene" style="z-index: 1; position: absolute; top: 0px; left: 0px; display: none;">
+    <video  width="256" height="144" id="local_video" style="z-index: 2; position: absolute; top: 0px; left: 0px;"></video>
+    <canvas id="render-canvas" style="z-index: 1; position: absolute; top: 0px; left: 0px;"></canvas>
+  </div>
+
+</body>
+
+</html>
