@@ -74,12 +74,12 @@ class Facemesh {
           const peerAudio = document.createElement("audio")
           peerAudio.srcObject = soundStream
           const voice = new BABYLON.Sound("audio", peerAudio.srcObject, scene, null, 
-            { streaming: true, autoplay: true, spatialSound: true }
+            { streaming: true, autoplay: true, spatialSound: true, maxDistance: 90 }
           )
           this.#voice = voice
           voice.attachToMesh(this.#faceMesh)
-          voice.setDirectionalCone(90, 180, 0)
-          voice.setLocalDirectionToMesh(new BABYLON.Vector3(1, 0, 0))
+          // voice.setDirectionalCone(90, 180, 0)
+          // voice.setLocalDirectionToMesh(new BABYLON.Vector3(1, 0, 0))
           voice.play() // bug: https://forum.babylonjs.com/t/9931
         }
     }
