@@ -23,7 +23,7 @@ async function exec(event) {
     // Parse passed ArrayBuffer
     const buffer = event.data
     const array = new Uint8ClampedArray(buffer)
-    const imData = new ImageData(array, 256, 144)
+    const imData = new ImageData(array, 160, 144)
 
     const t0 = performance.now();
     const predictions = await mlModel.estimateFaces({

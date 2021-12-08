@@ -21,7 +21,7 @@ const response = document.getElementById("response")
 const sceneDiv = document.getElementById("scene")
 const lobbyDiv = document.getElementById("lobby")
 
-const worker = new WorkerUse(256, 144)
+const worker = new WorkerUse(160, 144)
 
 canvas.width = lobbyDiv.clientWidth
 canvas.height = lobbyDiv.clientHeight
@@ -36,7 +36,7 @@ let isInRoom = false
 const localMediaStream = await navigator.mediaDevices.getUserMedia({
   audio: false,
   video: {
-    width: 256,
+    width: 160,
     height: 144,
   }
 })
