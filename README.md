@@ -1,6 +1,6 @@
 # Sensoria 
 
-This project is a demo for P2P WebRTC communication in 3D using TensorFlow [Face-Landmarks-Detection](https://github.com/tensorflow/tfjs-models/tree/master/face-landmarks-detection) for face tracking.
+This project is a demo for P2P WebRTC communication in 3D using TensorFlow [Face-Landmarks-Detection](https://github.com/tensorflow/tfjs-models/tree/master/face-landmarks-detection) for face & iris tracking.
 
 What you will see in unfiltered result of TensorFlow Facemesh (WASM backend).
 
