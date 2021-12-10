@@ -4,7 +4,7 @@ This project is a demo for P2P WebRTC communication in 3D using TensorFlow [Face
 
 What you will see in unfiltered result of TensorFlow Facemesh (WASM backend).
 
-
+![Screenshot](Screenshot.png)
 
 ## Try it
 Available here: https://sensoria.herokuapp.com. 
