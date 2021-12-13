@@ -15,7 +15,7 @@ So I became curious are there alternative solutions, that do not require VR gogg
 Projecting video as 2D rectangle into 3D space still breaks immersion, so I opted for Face Detection.
 
 ## Try it
-Available here: https://sensoria.herokuapp.com. 
+Available here: https://sensoria.herokuapp.com
 
 Trick: you can open Sensoria in another browser tab to simulate conversation.
 
